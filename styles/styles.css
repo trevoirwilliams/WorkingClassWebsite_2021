@@ -1,0 +1,50 @@
+
+/* CSS - Cascading Style Sheets
+Inline - Directly injected into the HTML tag | style = "" attribute
+Internal - Applied directly to a web page | <style>...</style> in the <head>
+External - In it's own file and reusable | <link rel="stylesheet" href="PATH TO CSS FILE" /> | Allows for more maintainability of a website
+
+Comprises 'selector:value' pairs
+selector - what I want to change about the element
+value - what i want it to be changed to */
+
+p{
+    color:grey;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: indigo;
+    /* text-align: center; */
+    /* style="color: crimson; " */
+}
+
+#container{
+    width:90%; 
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header, #footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+}
+
+#footer p{
+    color: maroon;
+}
+
+#nav a{
+    color: whitesmoke;
+    border-color: crimson ;
+    border-style: solid;
+    padding: 5px;
+    background-color: crimson;
+    text-decoration: none;
+}
+
+#nav a:hover{
+    padding: 6px;
+    background-color: brown;
+    border-color: brown;
+}
