@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products Page</title>
     <link rel="stylesheet" href="styles/styles.css" />
+    <title>Employee List</title>
 </head>
 <body>
     <div id="container" >
@@ -20,39 +21,44 @@
         </div>
     
         <div id="content">
-            <h1 class="headerText">Products Page</h1>
+            <h1 class="headerText">Employee Listing</h1>
             <hr/>
             <p>
-                Here is where we view the products for the website. 
+                An example of using a table to list data
             </p>
 
-            <table>
+            <!-- First Name | Last Name | TRN  -->
+
+            <table id="datatable">
                 <tr>
-                    <td colspan="3">
-                        <h1>Products For Sale</h1>
-                    </td>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>TRN</th>
                 </tr>
                 <tr>
-                    <td>
-                        <img src="images/dumbbells.jpg" class="productImages" />
-                    </td>
-                    <td>
-                        <img src="images/camera.jpg" class="productImages"/>
-                    </td>
-                    <td>
-                        <img src="images/mac.jpg" class="productImages"/>
-                    </td>
+                    <td>Nicola</td>
+                    <td>Gray</td>
+                    <td>123</td>
                 </tr>
                 <tr>
-                    <td>
-                        <p>Dumbbells - $40</p>
-                    </td>
-                    <td>
-                        <p>Camera - $40</p>
-                    </td>
-                    <td>
-                        <p>Laptop - $40</p>
-                    </td>
+                    <td>Randale</td>
+                    <td>Brown</td>
+                    <td>321</td>
+                </tr>
+                <tr>
+                    <td>Dane</td>
+                    <td>Lazarus</td>
+                    <td>963</td>
+                </tr>
+                <tr>
+                    <td>Latona</td>
+                    <td>Levy</td>
+                    <td>789654123</td>
+                </tr>
+                <tr>
+                    <td>Shoeb</td>
+                    <td>Harris</td>
+                    <td>147852369</td>
                 </tr>
             </table>
         </div> 
@@ -62,6 +68,6 @@
             <p>&copy; All Rights Reserved</p>
         </div>
     </div>
-    
+
 </body>
 </html>
