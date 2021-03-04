@@ -2,11 +2,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Contact Us = Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css" />
 </head>
+    
 <body>
-    <h1>Contact Us</h1>
+    <div id="container">
+        <div id="header">
+            <div id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="employees.html">Employees</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+                        <div class="dropdown-content">
+                          <a href="#">Link 1</a>
+                          <a href="#">Link 2</a>
+                          <a href="#">Link 3</a>
+                        </div>
+                      </li>
+                  </ul>
+            </div> 
+        </div>
+        
+        <div id="content">
+            <h1 class="headerText">Contact Us</h1>
+            <hr/>
+            <form method="get" action="post_contact.html">
+                <div class="form-group">
+                    <label for="firstname">First Name</label> <br/>
+                    <input class="form-control" type="text" id="firstname" name="firstname" />
+                </div>
+               
+                <div class="form-group">
+                    <label for="lastname">Last Name</label><br/>
+                    <input type="text" class="form-control" id="lastname" name="lastname" />
+                </div>
+                
+                <div class="form-group">
+                    <label for="emailaddress">Email Address</label><br/>
+                    <input class="form-control" type="email" id="emailaddress" name="emailaddress" />
+                </div>
+               
+                <div class="form-group">
+                    <label for="phone">Phone Number</label><br/>
+                    <input class="form-control" type="tel" id="phone" name="phone" />
+                </div>
+                
+                <div class="form-group">
+                    <label for="gender">Select Gender</label><br/>
+                    <input type="radio" id="male" name="gender" value="male" />
+                    <label for="male">Male</label> 
+                    
+                    <input type="radio" id="female" name="gender" value="female" />
+                    <label for="female">Female</label> 
+                </div>
+                
+                <div class="form-group">
+                    <label for="reasons">Select Reason For Contact</label> <br/>
+                    <select class="form-control" id="reasons" name="reasons">
+                        <option value="complaint">Complaint</option>
+                        <option value="query">Query</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="comments">Comment</label> <br/>
+                    <textarea class="form-control" id="comments" name="comments" rows="5" cols="20"></textarea>    
+                </div>
+               
+                
+                <input type="submit" class="btn btn-dark btn-block" value="Submit"/>
+                <!-- <button type="submit">Submit Button</button> -->
+            </form>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <div id="footer">
+            <h3>Done in Partial Fulfilment of Introduction to Web Technologies</h3>
+            <hr/>
+            <p>&copy; All Rights Reserved</p>
+        </div> 
+    </div>
+
 </body>
 </html>
+
